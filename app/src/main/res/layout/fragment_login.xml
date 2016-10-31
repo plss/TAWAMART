@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFF"
+
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="4dp"
+            android:text="V : 0.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/tawa_mart" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_round"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:windowSoftInputMode="stateHidden">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/etUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_round_shadow"
+                        android:hint="Username"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:lines="1"
+                        android:padding="8dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_round_shadow"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:padding="8dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <com.hkm.ui.processbutton.iml.ActionProcessButton
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="เข้าสู่ระบบ"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    custom:pb_colorComplete="@color/green_complete"
+                    custom:pb_colorNormal="@color/blue_normal"
+                    custom:pb_colorPressed="@color/blue_pressed"
+                    custom:pb_colorProgress="@color/purple_progress"
+                    custom:pb_cornerRadius="5dp"
+                    custom:pb_textComplete="สำเร็จ"
+                    custom:pb_textError="ผิดพลาด"
+                    custom:pb_textProgress="รอสักครู่" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="mibh.mis.tawamart">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppThemeWithActionbar" />
+        <activity
+            android:name=".activity.OrderActivity"
+            android:theme="@style/AppThemeWithActionbar" />
+        <activity
+            android:name=".activity.GalleryActivity"
+            android:theme="@style/AppThemeWithActionbar" />
+        <activity
+            android:name=".activity.ReqReturnActivity"
+            android:theme="@style/AppThemeWithActionbar" />
+        <activity
+            android:name=".activity.ReceiveActivity"
+            android:theme="@style/AppThemeWithActionbar" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity
+            android:name=".activity.CameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProductActivity"
+            android:theme="@style/AppThemeWithActionbar" />
+        <activity android:name=".activity.SecondActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppThemeNoActionbar" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:theme="@style/AppThemeNoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".thread.UploadImg"
+            android:enabled="true"
+            android:label="UploadImg" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="5c9c18254c5a4d0ba47db105684bd6bb4ffcd6a0" />
+    </application>
+
+</manifest>

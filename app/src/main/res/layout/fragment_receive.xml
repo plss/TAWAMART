@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingEnd="8dp"
+    android:paddingStart="8dp"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSelectCookingZoneReceive"
+            style="@style/button_white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:text="เลือกข้อมูลเริ่มต้น"
+            android:textAlignment="center" />
+
+        <Button
+            style="@style/dialog_blue_button"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:text="share"
+            android:id="@+id/btnShareReceive" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDateOrderAndShippedReceive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:height="35dp"
+            android:background="@drawable/bg_round"
+            android:gravity="center"
+            android:text="วันที่สั่ง" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSelectPoReceive"
+            style="@style/button_white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:text="เลือก PO"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnScanPoReceive"
+            style="@style/dialog_blue_button"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:text="scan" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewReceive"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/float_transparent"
+        android:dividerHeight="0dp"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/emptyElementReceive"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="ไม่มีรายการ"
+            android:textColor="#525252"
+            android:textSize="19.0sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnConfirmReceive"
+            style="@style/dialog_red_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="ครบ" />
+
+        <Button
+            android:id="@+id/btnSaveReceive"
+            style="@style/dialog_red_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="บันทึก" />
+
+
+        <Button
+            android:id="@+id/btnCameraReceive"
+            style="@style/dialog_red_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="กล้อง" />
+
+    </LinearLayout>
+
+</LinearLayout>

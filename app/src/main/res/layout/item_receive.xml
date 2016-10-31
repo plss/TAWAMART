@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvListItemNoReceive"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="?android:attr/editTextColor"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnTitleListItemReceive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="start|center_vertical"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:text="TEST" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#1F000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCompleteListItemReceive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableLeft="@drawable/ic_done"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:text=" ครบ" />
+
+                <Button
+                    android:id="@+id/btnInCompleteListItemReceive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableLeft="@drawable/ic_close"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:text=" ไม่ครบ" />
+
+                <Button
+                    android:id="@+id/btnDenyListItemReceive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableLeft="@drawable/ic_thumb_down"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:text=" ไม่ส่ง  " />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

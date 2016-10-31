@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <mibh.mis.tawamart.view.SquaredImageView
+            android:id="@+id/thumbImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA">
+
+            <TextView
+                android:id="@+id/tvItemImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingBottom="0dp"
+                android:text="SSSSSSSSSSSSSSSSSSSSSS"
+                android:textAllCaps="true" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/viewCheckedOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/check_mark"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+
+</FrameLayout>

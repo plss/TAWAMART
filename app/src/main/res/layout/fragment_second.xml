@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnProductFreshFood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab_button_background"
+            android:enabled="false"
+            android:text="ของสด" />
+
+        <Button
+            android:id="@+id/btnProductMeat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab_button_background"
+            android:text="เนื้อสัตว์" />
+
+        <Button
+            android:id="@+id/btnProductFruits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab_button_background"
+            android:text="ผลไม้" />
+
+        <Button
+            android:id="@+id/btnProductOther"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab_button_background"
+            android:text="เบ็ดเตล็ด" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etProductSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round"
+                android:hint="search"
+                android:padding="8dp" />
+
+            <Button
+                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:text="Search"
+                android:id="@+id/btnSearchProduct" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewSecond"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:divider="@color/float_transparent"
+            android:dividerHeight="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancelProduct"
+                style="@style/dialog_red_button"
+                android:layout_width="wrap_content"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/btnOkProduct"
+                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="OK" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
